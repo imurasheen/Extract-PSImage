@@ -12,7 +12,7 @@ You should specify two params : The path to the PNG image, and the path to the f
 
 Extract-PSImage extracts the Powershell script string of the maximum length that the image file may contain.  
 So there is 2 limitations.  
-->If the embedded script is shorter than the maximum length, a random padding string is extracted after the script.
+->If the embedded script is shorter than the maximum length, a random padding string is extracted after the script.  
 ->Even if there is no embedded script in the image, The Extract-PSImage process looks like it succeeded. But there is no valid output.
  (Only meaningless strings are output.)
 
