@@ -37,6 +37,8 @@ Under the sample folder, I prepared two examples.
 1. Add the argument : -Length  
 To specify the length to extract the Powershell script.  
 
+## Licence
+[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 
 ## Author
 [imurasheen](https://github.com/imurasheen)  
