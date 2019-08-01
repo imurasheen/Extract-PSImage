@@ -10,8 +10,11 @@ Extract-PSImage is a PowerShell script.
 You should specify two params : The path to the PNG image, and the path to the file to output the extracted Powershell script.  
 
 Extract-PSImage extracts the Powershell script string of the maximum length that the image file may contain.  
-So there is a limitation.  
+So there is 2 limitations.  
 ->If the embedded script is shorter than the maximum length, a random padding string is extracted after the script.
+->Even if there is no embedded script in the image, The Extract-PSImage process looks like it succeeded. But there is no valid output.
+
+I think if you look at the first 50 characters of output, you can determine if the script has been extracted or not.
 
 ## Arguments
 -Image [filepath] The path to the PNG image which you want to analyze.
@@ -26,7 +29,7 @@ PS> Extract-Invoke-PSImage -Image [path to the PNG image] -Out [path to the .ps1
 
 ## Example
 Under the sample folder, I prepared two examples.
-
+![Extracting payload](https://github.com/imurasheen/Extract-PSImage/blob/master/extract_payload.png)
 
 ## Issue
 1. Add the argument : -Length  
