@@ -13,6 +13,7 @@ Extract-PSImage extracts the Powershell script string of the maximum length that
 So there is 2 limitations.  
 ->If the embedded script is shorter than the maximum length, a random padding string is extracted after the script.
 ->Even if there is no embedded script in the image, The Extract-PSImage process looks like it succeeded. But there is no valid output.
+ (Only meaningless strings are output.)
 
 I think if you look at the first 50 characters of output, you can determine if the script has been extracted or not.
 
