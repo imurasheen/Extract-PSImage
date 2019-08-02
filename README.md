@@ -36,6 +36,8 @@ Under the sample folder, I prepared two examples.
 ## Issue
 1. Add the argument : -Length  
 To specify the length to extract the Powershell script.  
+2. Add the argument : -Web  
+To specify the image file by URL  
 
 ## Licence
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
